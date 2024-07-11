@@ -35,6 +35,7 @@ const TableData = () => {
       title: "Age",
       dataIndex: "age",
       key: "key",
+      sorter: (a, b) => a.age - b.age,
     },
     {
       title: "Address",
