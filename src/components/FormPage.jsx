@@ -1,12 +1,19 @@
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, Alert } from "antd";
+import { useState } from "react";
 
 const FormPage = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
   const handleOnFinish = (e) => {
     console.log(e);
+    setShowAlert(true);
   };
 
   return (
     <div>
+      {showAlert && (
+        <Alert message="SUCCESS" description="Loginn Successed" closable />
+      )}
       <Form onFinish={handleOnFinish}>
         <Form.Item label="User Name" name="username">
           <Input placeholder="username" required></Input>
