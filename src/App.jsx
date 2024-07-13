@@ -2,6 +2,7 @@ import { Button, Input, Select, Table } from "antd";
 import "./App.css";
 import FormPage from "./components/FormPage";
 import TableData from "./components/Table";
+import DateTimePicker from "./components/DateTimePicker";
 
 function App() {
   const fruits = ["apple", "banana", "orange", "grapes"];
@@ -29,6 +30,7 @@ function App() {
       </Select>
       <FormPage />
       <TableData />
+      <DateTimePicker />
     </div>
   );
 }
