@@ -4,6 +4,7 @@ import FormPage from "./components/FormPage";
 import TableData from "./components/Table";
 import DateTimePicker from "./components/DateTimePicker";
 import Spinning from "./components/Spinning";
+import Progressbar from "./components/Progressbar";
 
 function App() {
   const fruits = ["apple", "banana", "orange", "grapes"];
@@ -33,6 +34,7 @@ function App() {
       <TableData />
       <DateTimePicker />
       <Spinning />
+      <Progressbar />
     </div>
   );
 }
