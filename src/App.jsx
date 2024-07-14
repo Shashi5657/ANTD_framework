@@ -3,6 +3,7 @@ import "./App.css";
 import FormPage from "./components/FormPage";
 import TableData from "./components/Table";
 import DateTimePicker from "./components/DateTimePicker";
+import Spinning from "./components/Spinning";
 
 function App() {
   const fruits = ["apple", "banana", "orange", "grapes"];
@@ -31,6 +32,7 @@ function App() {
       <FormPage />
       <TableData />
       <DateTimePicker />
+      <Spinning />
     </div>
   );
 }
