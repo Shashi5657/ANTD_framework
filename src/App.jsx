@@ -1,10 +1,11 @@
-import { Button, Input, Select, Table } from "antd";
+import { Button, Divider, Input, Select, Table } from "antd";
 import "./App.css";
 import FormPage from "./components/FormPage";
 import TableData from "./components/Table";
 import DateTimePicker from "./components/DateTimePicker";
 import Spinning from "./components/Spinning";
 import Progressbar from "./components/Progressbar";
+import FormValidation from "./components/FormValidation";
 
 function App() {
   const fruits = ["apple", "banana", "orange", "grapes"];
@@ -35,6 +36,8 @@ function App() {
       <DateTimePicker />
       <Spinning />
       <Progressbar />
+      <Divider />
+      <FormValidation />
     </div>
   );
 }
